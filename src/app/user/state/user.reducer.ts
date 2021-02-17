@@ -1,12 +1,12 @@
 import {createAction, createFeatureSelector, createReducer, createSelector, on} from '@ngrx/store';
 import {User} from '../user';
 
+// State for this feature (User)
 export interface UserState {
   maskUserName: boolean;
   currentUser: User;
 }
 
-// State for this feature (User)
 const initialState: UserState = {
   maskUserName: true,
   currentUser: null
